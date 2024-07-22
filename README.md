@@ -1,21 +1,21 @@
 ## decision structure
 brief summary with examples of if else and switch case
 
-##exercise
+## exercise
 -some exercise of the course
 ##functions
 -teory of functions, prototype, header and examples
 
-##lists
+## lists
 -lists of college
 
-##repetition structure
+# #repetition structure
 -the basic for, do while and while with examples
 
-##types of data
+## types of data
 -alpha, bolean in C, some math operations, strings and types
-##varibles
+## varibles
 -inicialization of variables and declarations
 
-##vectors and matrices
+## vectors and matrices
 -examples of matrices of strings and numbers and arrays too
