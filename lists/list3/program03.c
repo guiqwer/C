@@ -8,13 +8,9 @@ void getInputString(char string[])
     fgets(string, MAX_STRING_LENGTH, stdin);
 }
 
-int main()
+int processString(char string[])
 {
-
-    char string[MAX_STRING_LENGTH];
     int count = 0;
-
-    getInputString(string);
 
     while (string[count] != '\0')
     {
@@ -25,6 +21,18 @@ int main()
         }
         count++;
     }
+    return count;
+}
+
+int main()
+{
+
+    char string[MAX_STRING_LENGTH];
+    int count = 0;
+
+    getInputString(string);
+
+    count = processString(string);
     printf("This is tring have %d chars", count);
     return 0;
 }
