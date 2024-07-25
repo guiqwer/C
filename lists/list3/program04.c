@@ -34,6 +34,18 @@ int main()
     char firstString[MAX_STRING_LENGTH];
     char secondString[MAX_STRING_LENGTH];
 
+    getInputString(firstString, secondString);
+
+    compareStrings(firstString, secondString);
+
+    return 0;
+}
+
+/*
+
+    the program with function strcmp
+
+
     /*
 
     getInputString(firstString, secondString);
@@ -49,9 +61,5 @@ int main()
 
     */
 
-    getInputString(firstString, secondString);
 
-    compareStrings(firstString, secondString);
-
-    return 0;
-}
+*/
