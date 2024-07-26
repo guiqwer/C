@@ -52,7 +52,7 @@ int main() {
 
 
 
-    // size_t lengthFirstString, lengthSecondString;
+    // size_t lengthFirstString, lengthSecondString; 
 
     /*
 
