@@ -64,9 +64,9 @@ int main()
         }
     }
 
-    // Atualizar o array de ponteiros
-    pmm[0] = pmin;
-    pmm[1] = pmax;
+    // Att array
+    *(pmm + 0) = pmin;
+    *(pmm + 1) = pmax;
 
     printf("End. do menor: %p com valor %d\n", *(pmm + 0), *(*(pmm + 0)));
     printf("End. do maior: %p com valor %d\n", *(pmm + 1), *(*(pmm + 1)));
