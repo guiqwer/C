@@ -21,3 +21,6 @@ inicialization of variables and declarations
 
 # Vectors and matrices
 examples of matrices of strings and numbers and arrays too
+
+# Pointer
+examples of classe college
