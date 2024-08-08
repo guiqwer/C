@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 #define RANGE 10
 
 int main()
