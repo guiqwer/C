@@ -46,7 +46,7 @@ int main()
 
     float media = soma / qtd;
 
-    // Mediana utilizando o algorítmo de ordenação por seleção
+    // Mediana utilizando o algorítmo de ordenação por seleção (arimética de ponteiros.)
     int aux;
     for (int i = 0; i < qtd - 1; i++)
     {
