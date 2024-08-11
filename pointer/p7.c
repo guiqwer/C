@@ -49,7 +49,7 @@ int main()
 
     // maior e menor
 
-    int maior = 0, menor;  // Maior começa com 0 porque qualquer valor dentro da nossa matriz vai ser maior que 0;
+    int maior = 0, menor = **matriz;  // Maior começa com 0 porque qualquer valor dentro da nossa matriz vai ser maior que 0;
     //menor começa com lixo por que qualquer valor da nossa matriz vai ser menor, ja que o range é 10
  
     int *pMaior = &maior , *pMenor = &menor;
