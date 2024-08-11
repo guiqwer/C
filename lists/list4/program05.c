@@ -10,12 +10,6 @@ int main()
     char *vec;
     int count = 0;
 
-    if (!(vec = (char *)malloc(LEN * sizeof(char))))
-    {
-        puts("Memória indisponível");
-        exit(1);
-    }
-
     puts("Enter the string: ");
     fgets(vec, LEN, stdin);
 
@@ -26,7 +20,7 @@ int main()
 
     // output
 
-    printf("Length of the string: %d\n", count);
+    printf("Length of the string: %d\n", *pCount);
 
     free(vec);
 
