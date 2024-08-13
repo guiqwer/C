@@ -18,10 +18,19 @@ int main()
     scanf("%d", &coluna);
 
     // alocação de memoria
-    if (!(matriz = (int **)malloc(linha * coluna * sizeof(int **))))
+    if (!(matriz = (int **)malloc(linha * sizeof(int*))))
     {
         printf("Memória Inválida.");
         exit(1);
+    }
+
+    for (int i = 0; i < linha; i++)
+    {
+        if (!(*(matriz + i) = (int *)malloc(coluna * sizeof(int))))
+        {
+            printf("Memória Inválida.");
+            exit(1);
+        }
     }
 
     // armazenar matriz com srand
@@ -49,10 +58,10 @@ int main()
 
     // maior e menor
 
-    int maior = 0, menor = **matriz;  // Maior começa com 0 porque qualquer valor dentro da nossa matriz vai ser maior que 0;
-    //menor começa com lixo por que qualquer valor da nossa matriz vai ser menor, ja que o range é 10
- 
-    int *pMaior = &maior , *pMenor = &menor;
+    int maior = 0, menor = **matriz; // Maior começa com 0 porque qualquer valor dentro da nossa matriz vai ser maior que 0;
+    // menor começa com lixo por que qualquer valor da nossa matriz vai ser menor, ja que o range é 10
+
+    int *pMaior = &maior, *pMenor = &menor;
 
     for (int i = 0; i < linha; i++)
     {
@@ -70,10 +79,13 @@ int main()
         }
     }
 
-    printf("Maior %d\n", *pMaior); 
+    printf("Maior %d\n", *pMaior);
     printf("Menor %d", *pMenor);
 
-
+    for (int i = 0; i < linha; i++)
+    {
+        free(*(matriz + i));
+    }
     free(matriz);
 
     return 0;
