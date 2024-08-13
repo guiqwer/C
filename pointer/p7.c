@@ -18,7 +18,7 @@ int main()
     scanf("%d", &coluna);
 
     // alocação de memoria
-    if (!(matriz = (int **)malloc(linha * sizeof(int*))))
+    if (!(matriz = (int **)malloc(linha * sizeof(int *))))
     {
         printf("Memória Inválida.");
         exit(1);
@@ -49,7 +49,7 @@ int main()
     {
         for (int k = 0; k < coluna; k++)
         {
-            printf("%d\t", *(*(matriz + i) + k));
+            printf("%p %d\t", *(matriz + i) + k, *(*(matriz + i) + k)); //*(matriz + i + k) = endereço
         }
         printf("\n");
     }
@@ -59,7 +59,7 @@ int main()
     // maior e menor
 
     int maior = 0, menor = **matriz; // Maior começa com 0 porque qualquer valor dentro da nossa matriz vai ser maior que 0;
-    // menor começa com lixo por que qualquer valor da nossa matriz vai ser menor, ja que o range é 10
+    // menor começa com o primeiro elemento da matriz
 
     int *pMaior = &maior, *pMenor = &menor;
 
