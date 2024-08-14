@@ -9,7 +9,7 @@ int main()
 
     // Declaração de variáveis
 
-    int *vetorX = NULL, *vetorY = NULL, *vetorK = NULL, vetorV[2]; // k = soma dos vetores.
+    int *vetorX = NULL, *vetorY = NULL, *vetorK = NULL, *vetorV = NULL; // k = soma dos vetores.
     int tam;
 
     printf("Digite o tamanho dos vetores x e y:\n");
