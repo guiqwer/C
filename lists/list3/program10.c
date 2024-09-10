@@ -47,11 +47,6 @@ int main()
             {
                 count += 1;
             }
-            else
-            {
-                puts("The number not exist in the matrices.");
-                exit(1);
-            }
         }
     }
 
