@@ -27,12 +27,11 @@ int main()
     n4.x = 40;
     n4.p = NULL;
 
-    imprimir(&n1);
+    imprimir(&n1); //observe que como nossa variavel não é um ponteiro precisamos passar ela por referencia e não somente sem o &
 }
 
 void imprimir(node *p)
 {
-    node *i = p;
 
     for (node *i = p; i != NULL; i = i->p)
     {
