@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-
-    printf("Digite dois números inteiros: ");
-    scanf("%d %d", &a, &b);
-
-    printf("%d %s múltiplo de %d\n", a, (a % b == 0) ? "é" : "não é", b);
-
+    int num;
+    
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+    
+    // Usando operador ternário para determinar par ou ímpar
+    printf("%d é %s\n", num, (num % 2 == 0 ? "par" : "ímpar"));
+    
     return 0;
 }
