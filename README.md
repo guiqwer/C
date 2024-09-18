@@ -24,3 +24,6 @@ examples of matrices of strings and numbers and arrays too
 
 # Pointer
 examples of classe college
+
+# Structs
+structs and examples 
